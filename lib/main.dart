@@ -9,10 +9,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Gerenciamento de Alunos',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+        appBar: AppBar(
+          title: const Text('Bem-vindo ao Gerenciamento de Alunos'),
+        ),
+        body: const Center(
+          child: Text('Tela inicial do aplicativo de gerenciamento de alunos.'),
         ),
       ),
     );
