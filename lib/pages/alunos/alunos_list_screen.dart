@@ -8,6 +8,8 @@ import 'aluno_form_screen.dart';
 class AlunosListScreen extends StatelessWidget {
   final FirestoreService _firestoreService = FirestoreService();
 
+  AlunosListScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

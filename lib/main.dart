@@ -16,9 +16,9 @@ class MainApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Bem-vindo ao Gerenciamento de Alunos'),
+          title: Text('Bem-vindo ao Gerenciamento de Alunos'),
         ),
-        body: const Center(
+        body: Center(
           child: Text('Tela inicial do aplicativo de gerenciamento de alunos.'),
         ),
       ),

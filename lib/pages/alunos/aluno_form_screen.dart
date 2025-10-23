@@ -7,7 +7,7 @@ import '../../services/firestore_service.dart';
 class AlunoFormScreen extends StatefulWidget {
   final Aluno? aluno; // Se for nulo, é CREATE. Se não, é UPDATE.
 
-  AlunoFormScreen({this.aluno});
+  const AlunoFormScreen({super.key, this.aluno});
 
   @override
   _AlunoFormScreenState createState() => _AlunoFormScreenState();
@@ -57,8 +57,8 @@ class _AlunoFormScreenState extends State<AlunoFormScreen> {
               // TODO: Criar um DropdownButton para selecionar a turma de uma lista
               SizedBox(height: 20),
               ElevatedButton(
-                child: Text('Salvar'),
                 onPressed: _salvar,
+                child: Text('Salvar'),
               )
             ],
           ),
